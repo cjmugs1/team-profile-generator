@@ -1,7 +1,6 @@
 const fs = require('fs');
 const { beginPrompts } = require('./src/inquirerPrompts')
 
-
 function beginHtml() {
     let htmlHead = 
     `<!DOCTYPE html>
@@ -23,7 +22,6 @@ function beginHtml() {
     if (err) {console.log(err)}
     })
 };
-
 
 function collectInfo() {
     console.log('\x1b[37m%s\x1b[0m', 'Welcome to the team profile generator! Answer the following prompts to get your team page up and running in no time!')
