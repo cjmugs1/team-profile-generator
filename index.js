@@ -19,11 +19,9 @@ function beginHtml() {
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>`;
 
-    fs.writeFileSync('./dist/generatedHTML.html', htmlHead, (err) =>
-    err
-      ? console.log(err)
-      : console.log("Successfully created your team's HTML page!")
-    );
+    fs.writeFileSync('./dist/generatedHTML.html', htmlHead, (err) => {
+    if (err) {console.log(err)}
+    })
 };
 
 
