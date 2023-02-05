@@ -7,7 +7,7 @@ Use the command line to generate an html page to display your project and its te
 *To see a video walk-through of someone using this repo to generate an HTML page, click the video-tutorial link.*
 <br/><br/>
 ## Tutorial Video
-[Video Tutorial]()
+[Video Tutorial](https://drive.google.com/file/d/1Z9mZSWDOGCI14robPRaYrfk3IPAz2oQD/view?usp=share_link)
 <br/><br/>
 ## Challenge Description | User Story
 ### **AS A manager**
