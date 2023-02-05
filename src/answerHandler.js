@@ -17,9 +17,9 @@ const createProject = ({ projectTitle }) => {
     <div class="container py-4 py-xl-5" style="min-width: 90vw;">
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3" style="margin: 0;">`;
 
-    fs.appendFile('./dist/generatedHTML.html', htmlHeader, (err) => {
+    setTimeout(function() {fs.appendFile('./dist/generatedHTML.html', htmlHeader, (err) => {
         if (err) {console.log(err)}
-    });    
+    });}, 250)    
 };
 
 const createEmployeeCard = (answers) => {
@@ -73,14 +73,14 @@ const createEmployeeCard = (answers) => {
         : console.log("\nSuccessfully added an employee to your team page!")
     });
 
-    if (answers.role === 'None, Im Done!') {
+    setTimeout (function() {if (answers.role === 'None, Im Done!') {
         finishHtml();
         return;
-    }
+    }}, 750)
 };
 
 
-const finishHtml = async () => {
+const finishHtml = () => {
     let htmlFinish = `
         </div>
         </div>
@@ -89,7 +89,7 @@ const finishHtml = async () => {
 
     </html>`
 
-    await fs.appendFile('./dist/generatedHTML.html', htmlFinish, (err) => {
+    fs.appendFile('./dist/generatedHTML.html', htmlFinish, (err) => {
     err
         ? console.log(err)
         : console.log("Successfully created your team's HTML page!")

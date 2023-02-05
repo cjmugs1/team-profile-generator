@@ -62,13 +62,13 @@ const openingQuestions = async () => {
     ])
     .then(async (answers) => {
         await createProject(answers);
-        await createEmployeeCard(answers);
+        setTimeout (function() {createEmployeeCard(answers);}, 1000)
 
         setTimeout(function() { if (answers.role === 'Engineer') {
             newEngineerQuestions();
         } else if (answers.role === 'Intern') {
             newInternQuestions();
-        }}, 1000);
+        }}, 1750);
     });
 }
 
