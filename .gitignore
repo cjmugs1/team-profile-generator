@@ -1,0 +1,5 @@
+node_modules/
+package-lock.json
+testInquirer.js
+index.html
+assets/images/site-mockup.JPG
